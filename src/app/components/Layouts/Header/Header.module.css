@@ -3,8 +3,8 @@
     color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 32px;
+    justify-content: space-between;
+    flex-direction: row;
     padding: 24px 80px
 
 }
@@ -24,7 +24,12 @@
 .logo {
     background-image: url('../../../../static/images/logo.svg');
     width: 80px;
-    height: 80px;
+    height: 56px;
     background-repeat: no-repeat;
     background-size: 55px;
+}
+
+.login {
+    margin-left: auto;
+    list-style-type: none;
 }
