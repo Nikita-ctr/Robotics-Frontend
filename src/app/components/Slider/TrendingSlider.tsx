@@ -23,6 +23,7 @@ const TrendingSlider = () => {
             setCurrentImageIndex(currentImageIndex+1)
         }
     }
+
     const changePreviousImage = () => {
         if (currentImageIndex >0) {
             setTimeout(()=> {

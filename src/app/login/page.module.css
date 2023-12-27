@@ -44,7 +44,7 @@
 
 
 .page {
-    background-image: url("../../static/images/img.png");
+    background-image: url("../../static/images/img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -66,4 +66,9 @@
     color: white;
     padding: 16px 24px 16px 24px;
     border-radius: 8px;
+}
+
+.error {
+    color: red;
+    margin-top: 8px;
 }
