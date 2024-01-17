@@ -68,7 +68,7 @@ export default function Login() {
                             type="password"
                             placeholder="Password"
                             value={password}
-                            onChange={(event) => setPassword(event.target.value)}
+                                onChange={(event) => setPassword(event.target.value)}
                         />
                         {error &&
                             <p className={styles.error}>The username and/or password you specified are not correct.</p>}

@@ -2,3 +2,9 @@
     text-align: center;
     padding: 56px 80px 56px 80px;
 }
+
+.cards_container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}

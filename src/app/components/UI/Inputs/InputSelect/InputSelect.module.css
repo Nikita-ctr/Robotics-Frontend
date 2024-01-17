@@ -1,0 +1,14 @@
+.option_container {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    background-color: #FFF;
+    font-size: 10.5pt;
+    font-weight: 400;
+    height: 44px;
+    padding: 12px 16px;
+    border: 1px solid #C4CBD7;
+    border-radius: 8px;
+    outline: none;
+    color: #2F3644;
+}
