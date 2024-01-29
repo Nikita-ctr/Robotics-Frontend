@@ -9,20 +9,24 @@ import act4 from "../static/images/actualcard4.png"
 export default function Home() {
     return (
         <main>
-            <div>
-                <img src={image.src} alt={"Image not found"}/>
+            <div className={styles.main_image}>
+                <div className={styles.overlay}></div>
+                <p className={styles.image_text}>Industrial&nbsp;Robotics</p>
+                <p className={styles.image_subtext}>Ведущая лаборатория БрГТУ в области обучения и разработки проектов
+                    по автоматизации и роботизации производственных предприятий</p>
             </div>
-            <h1 className={styles.title}>Экскурсии</h1>
             <div>
-                <h3>Виртуальная экскурсия</h3>
+                <div>
+                    <TrendingSlider></TrendingSlider>
+                </div>
                 <div className={styles.cards_container}>
-                    <ActualCard image={act1.src} title={"Что нужно знать, чтобы попасть в лабораторию?"} buttonText={"Читать"}/>
+                    <ActualCard image={act1.src} title={"Что нужно знать, чтобы попасть в лабораторию?"}
+                                buttonText={"Читать"}/>
                     <ActualCard image={act2.src} title={"Записаться на экскурсию"} buttonText={"Читать"}/>
                     <ActualCard image={act3.src} title={"Проекты для новичков"} buttonText={"Читать"}/>
                     <ActualCard image={act4.src} title={"Есть кто в лаборатории?"} buttonText={"Читать"}/>
 
                 </div>
-                {/*<TrendingSlider/>*/}
             </div>
         </main>
     )

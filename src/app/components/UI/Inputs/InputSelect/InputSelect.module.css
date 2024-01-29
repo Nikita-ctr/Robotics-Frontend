@@ -1,14 +1,31 @@
-.option_container {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    background-color: #FFF;
-    font-size: 10.5pt;
-    font-weight: 400;
-    height: 44px;
-    padding: 12px 16px;
-    border: 1px solid #C4CBD7;
+.input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.input {
+    border: 1px solid #9D9D9D;
+    padding: 12px 16px 12px 16px;
     border-radius: 8px;
-    outline: none;
-    color: #2F3644;
+}
+
+.input::placeholder {
+    color: #9D9D9D;
+}
+
+.option {
+    border: 1px solid #9D9D9D;
+    padding: 12px 16px 12px 16px;
+    border-radius: 8px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
