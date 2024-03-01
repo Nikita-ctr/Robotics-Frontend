@@ -9,7 +9,7 @@ import slide5 from "../../../static/images/slide5.jpg";
 import slide6 from "../../../static/images/slide6.jpg";
 import Image from "next/image";
 
-const TrendingSlider = () => {
+export default function TrendingSlider() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     // Function to go to the next slide
@@ -59,5 +59,3 @@ const TrendingSlider = () => {
         </div>
     );
 };
-
-export default TrendingSlider;

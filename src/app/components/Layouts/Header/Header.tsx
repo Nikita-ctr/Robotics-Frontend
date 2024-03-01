@@ -1,32 +1,34 @@
 "use client";
+
 import styles from "./Header.module.css"
 import Link from "next/link";
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
-function Header() {
+export default function Header() {
     const pathname = usePathname();
+
     return (
         <header className={styles.header_container}>
-            <li className={styles.logo}></li>
-
-            <nav className={styles.header_nav}>
-                <ul>
-                    <li>Главная</li>
-                    <li>О лаборатории</li>
-                    <li>Новости</li>
-                    <li>Проекты</li>
-                    <li>Экскурсия</li>
-                    <li><Link href="https://sia.by/">sia.by</Link></li>
-                </ul>
-            </nav>
             <div>
-                <li className={styles.login}><Link className={`link ${pathname === '/login' ? 'active' : ''}`}
-                                                   href="/login">
+                <Image src="/icons/ir_icon.png" alt="Logo" height={40} width={60} />
+            </div>
+
+            <div className={styles.header_navigation}>
+                <Link className={styles.navigation_link} href="/">Главная</Link>
+                <Link className={styles.navigation_link} href="/">О лаборатории</Link>
+                <Link className={styles.navigation_link} href="/">Новости</Link>
+                <Link className={styles.navigation_link} href="/">Проекты</Link>
+                <Link className={styles.navigation_link} href="/excursions">Экскурсия</Link>
+                <Link className={styles.navigation_link} href="https://sia.by/" target="_blank">sia.by</Link>
+            </div>
+
+            <div>
+                <Link className={`${styles.navigation_link} ${pathname === '/login' ? 'active' : ''}`}
+                    href="/login">
                     Войти
-                </Link></li>
+                </Link>
             </div>
         </header>
     );
 }
-
-export default Header;
