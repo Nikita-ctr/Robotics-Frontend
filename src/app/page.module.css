@@ -30,7 +30,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     align-self: center;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
 /* ----------------------- */
@@ -38,7 +38,7 @@
 .cards_section {
     display: flex;
     flex-direction: column;
-    padding: 40px 80px;
+    padding: 56px 80px;
 }
 
 .cards_container {
@@ -53,6 +53,14 @@
 .projects_section {
     display: flex;
     flex-direction: column;
-    padding: 40px 80px;
+    padding: 56px 80px;
     background-color: #cce1f0;
+}
+
+.project_hexagons_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 992px;
+    align-self: center;
 }
