@@ -26,6 +26,15 @@
     width: 574px;
 }
 
+.section__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-self: center;
+    margin-bottom: 32px;
+}
+
+/* ----------------------- */
+
 .cards_section {
     display: flex;
     flex-direction: column;
@@ -39,9 +48,11 @@
     justify-content: center;
 }
 
-.cards_section__title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    align-self: center;
-    margin-bottom: 32px;
+/* ----------------------- */
+
+.projects_section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    background-color: #cce1f0;
 }

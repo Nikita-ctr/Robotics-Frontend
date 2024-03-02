@@ -23,7 +23,7 @@ export default function Home() {
             <DividerDecorator />
             <TrendingSlider />
             <div className={styles.cards_section}>
-                <div className={styles.cards_section__title}>Актуальное</div>
+                <div className={styles.section__title}>Актуальное</div>
                 <div className={styles.cards_container}>
                     {
                         cards_data.map((element, index) => {
@@ -33,6 +33,12 @@ export default function Home() {
                             );
                         })
                     }
+                </div>
+            </div>
+            <div className={styles.projects_section}>
+                <div className={styles.section__title}>Проекты</div>
+                <div className={styles.project_hexagons_container}>
+                    
                 </div>
             </div>
         </main>
