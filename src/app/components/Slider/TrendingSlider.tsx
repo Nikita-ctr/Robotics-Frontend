@@ -1,55 +1,59 @@
-"use client";
-import React, {useState} from "react";
+"use client"
+
 import styles from "./TrendingSlider.module.css";
+import Image from "next/image";
 
-const TrendingSlider = () => {
-    const imagesItems = [
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
+import { SliderArrows } from "./SliderArrows/SliderArrows";
 
-        {
-            id: 2,
-            img: "https://www.worldanimalprotection.org.nz/sites/default/files/styles/600x400/public/media/smacc-monkey.jpg?h=e88642a1&itok=JlwOs4DK",
-        },
-        {
-            id: 1,
-            img: "https://cdn.britannica.com/06/150806-050-6AE99C98/Proboscis-monkey.jpg",
-        },
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
+
+
+
+export default function TrendingSlider() {
+
+    // Array of slide objects
+    const slides = [
+        { color: '#0D6DB5', description: 'Подготовка и переподготовка кадров в области промышленной робототехники, автоматизации технологических процессов, цифрового инжиниринга, компьютерного моделирования и цифровых двойников' },
+        { color: '#6BB7CE', description: 'Разработка новых и иновационных технологий, образцов, изделий для областей промышлености' },
+        { color: '#5AAB6F', description: 'Разработка роботехнических комплексов, уникальных захватных механизмов, специализированных транспортных систем, систем автоматизации' },
+        { color: '#8A9ED1', description: 'Моделирование и анализ технологических процессов' },
+        { color: '#93CBC2', description: 'Использование современных технологий в образовательном процессе' },
+        { color: '#5598C6', description: 'Установка тесной связи образовательного процесса с производственным' }
     ];
 
-    const [currentImageIndex, setCurrentImageIndex] = useState(0)
-
-    const changeNextImage = () => {
-        if(currentImageIndex < imagesItems.length -1 ){
-            console.log(currentImageIndex)
-            setCurrentImageIndex(currentImageIndex+1)
-        }
-    }
-
-    const changePreviousImage = () => {
-        if (currentImageIndex >0) {
-            setTimeout(()=> {
-                setCurrentImageIndex(prevState => prevState - 1)
-            }, 200)
-        }
-    }
-
     return (
-        <>
-            <div className={styles.slider_container}>
-                <div className={styles.side_button} onClick={changePreviousImage}>
-                    <div>
-                        icon
-                    </div>
-                </div>
-                <div className={styles.image_container}>
-                    <img src={imagesItems[currentImageIndex].img} alt=""/>
-                </div>
-                <div className={styles.side_button} onClick={changeNextImage}>
-                    <div>
-                        icon
-                    </div>
-                </div>
-            </div>
-        </>
+        <div className={styles.slider_container}>
+            <Swiper
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                }}
+                centeredSlides={true}
+                loop={true}
+                style={{ zIndex: '1' }}
+                modules={[Autoplay, EffectFade, Navigation]}
+                effect={'fade'}
+            >
+                {
+                    slides.map((element, index) => {
+                        return (
+                            <SwiperSlide key={index} style={{ backgroundColor: element.color }}>
+                                <div className={styles.slider_item}>
+                                    <div className={styles.hexagon_overlay}>
+                                        <Image src={`/images/slider/slider_hexagon_${index + 1}.png`} alt="" height={224} width={198} />
+                                    </div>
+                                    <div className={styles.slider_item__description}>{element.description}</div>
+                                </div>
+                            </SwiperSlide>
+                        );
+                    })
+                }
+                <SliderArrows />
+            </Swiper>
+        </div>
     );
 };
-export default TrendingSlider;

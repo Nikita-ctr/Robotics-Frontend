@@ -2,3 +2,71 @@
     text-align: center;
     padding: 56px 80px 56px 80px;
 }
+
+.cards_container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.preview_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 16px 80px;
+    width: 100%;
+    height: 500px;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("/images/preview.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.preview_section__title {
+    font-size: 4.25rem;
+    font-weight: 500;
+    color: white;
+    width: 574px;
+}
+
+.preview_section__description {
+    font-size: 1.25rem;
+    color: white;
+    width: 574px;
+}
+
+.image_text {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    width: 808px;
+    height: 113px;
+    top: 231px;
+    left: 80px;
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 113px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.image_subtext {
+    position: absolute;
+    /* Position the text absolutely */
+    color: white;
+    font-size: 32px;
+    z-index: 3;
+    width: 895px;
+    height: 114px;
+    top: 355px;
+    left: 80px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
