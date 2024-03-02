@@ -11,17 +11,16 @@ export default function Home() {
 
     const preview_description: string = "Ведущая лаборатория БрГТУ в области обучения и разработки проектов по автоматизации и роботизации производственных предприятий";
     
-
     return (
         <main>
             <div className={styles.preview_section}>
                 <div className={styles.preview_section__title}>Industrial Robotics</div>
                 <div className={styles.preview_section__description}>{ preview_description }</div>
             </div>
-            <DividerDecorator></DividerDecorator>
+            <DividerDecorator />
             <div>
                 <div>
-                    <TrendingSlider></TrendingSlider>
+                    <TrendingSlider />
                 </div>
                 <div className={styles.cards_container}>
                     <ActualCard image={act1.src} title={"Что нужно знать, чтобы попасть в лабораторию?"}
