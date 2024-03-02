@@ -1,33 +1,38 @@
 import styles from "./page.module.css"
 import TrendingSlider from "../../src/app/components/Slider/TrendingSlider";
 import ActualCard from "@/app/components/ActualCard/ActualCard";
-import act1 from "../static/images/actualcard1.png"
-import act2 from "../static/images/actualcard2.png"
-import act3 from "../static/images/actualcard3.png"
-import act4 from "../static/images/actualcard4.png"
 import DividerDecorator from "./components/divider_decorator/DividerDecorator";
 
 export default function Home() {
 
     const preview_description: string = "Ведущая лаборатория БрГТУ в области обучения и разработки проектов по автоматизации и роботизации производственных предприятий";
-    
+
+    const cards_data = [
+        { img_src: '', title: 'Что нужно знать, чтобы попасть в лабораторию?', button_text: 'Читать' },
+        { img_src: '', title: 'Записаться на экскурсию', button_text: 'Читать' },
+        { img_src: '', title: 'Проекты для новичков', button_text: 'Читать' },
+        { img_src: '', title: 'Есть кто в лаборатории?', button_text: 'Читать' },
+    ];
+
     return (
         <main>
             <div className={styles.preview_section}>
                 <div className={styles.preview_section__title}>Industrial Robotics</div>
-                <div className={styles.preview_section__description}>{ preview_description }</div>
+                <div className={styles.preview_section__description}>{preview_description}</div>
             </div>
             <DividerDecorator />
-            <div>
-                <div>
-                    <TrendingSlider />
-                </div>
+            <TrendingSlider />
+            <div className={styles.cards_section}>
+                <div className={styles.cards_section__title}>Актуальное</div>
                 <div className={styles.cards_container}>
-                    <ActualCard image={act1.src} title={"Что нужно знать, чтобы попасть в лабораторию?"}
-                        buttonText={"Читать"} />
-                    <ActualCard image={act2.src} title={"Записаться на экскурсию"} buttonText={"Читать"} />
-                    <ActualCard image={act3.src} title={"Проекты для новичков"} buttonText={"Читать"} />
-                    <ActualCard image={act4.src} title={"Есть кто в лаборатории?"} buttonText={"Читать"} />
+                    {
+                        cards_data.map((element, index) => {
+                            return (
+                                <ActualCard key={index} image={`/images/actual_cards/card_${index + 1}.jpg`} title={element.title}
+                                    buttonText={element.button_text} />
+                            );
+                        })
+                    }
                 </div>
             </div>
         </main>

@@ -8,11 +8,13 @@ interface ActualCardProps {
     buttonText: string
 }
 
-const ActualCard = ({image, title, buttonText}: ActualCardProps) => {
+const ActualCard = ({ image, title, buttonText }: ActualCardProps) => {
     return (
-        <div className={styles.card}>
-            <Image width={340} height={340} className={styles.image} src={image} alt={"some image"}/>
-            <h2 className={styles.title}>{title}</h2>
+        <div className={styles.card_container}>
+            <div className={styles.image_container}>
+                <Image src={image} alt={"card image"} fill style={{ objectFit: "cover" }} />
+            </div>
+            <div className={styles.card_title}>{title}</div>
             <SecondaryButton>{buttonText}</SecondaryButton>
         </div>
     );

@@ -5,7 +5,7 @@ interface SecondaryButtonProps {
     children: React.ReactNode
 }
 
-const SecondaryButton = ({children}: SecondaryButtonProps) => {
+const SecondaryButton = ({ children }: SecondaryButtonProps) => {
     return (
         <button className={styles.button}>
             {children}
