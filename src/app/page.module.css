@@ -1,58 +1,66 @@
-.title {
-    text-align: center;
-    padding: 56px 80px 56px 80px;
+.preview_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 80px;
+    width: 100%;
+    height: 500px;
+
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("/images/home_preview.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.preview_section__title {
+    font-size: 4.25rem;
+    font-weight: 500;
+    color: white;
+    width: 574px;
+}
+
+.preview_section__description {
+    font-size: 1.25rem;
+    color: white;
+    width: 574px;
+}
+
+.section__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+/* ----------------------- */
+
+.cards_section {
+    display: flex;
+    flex-direction: column;
+    padding: 56px 80px;
 }
 
 .cards_container {
-    display: flex;
-    gap: 32px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, 280px);
     justify-content: center;
 }
 
-.main_image {
-    position: relative;
-    background-image:url("../static/images/main.png");
-    background-size: cover;
-    width: 1920px;
-    height: 703px;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#00000080;
-}
-.image_text {
-    position: absolute;
-    color: white;
-    z-index: 1;
-    width: 808px;
-    height: 113px;
-    top: 231px;
-    left: 80px;
-    font-size: 96px;
-    font-weight: 500;
-    line-height: 113px;
-    letter-spacing: 0em;
-    text-align: left;
+/* ----------------------- */
 
-
+.projects_section {
+    display: flex;
+    flex-direction: column;
+    padding: 56px 80px;
+    background-color: #cce1f0;
 }
 
-.image_subtext {
-    position: absolute; /* Position the text absolutely */
-    color: white;
-    font-size: 32px;
-    z-index: 3;
-    width: 895px;
-    height: 114px;
-    top: 355px;
-    left: 80px;
-    font-weight: 500;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
-
+.project_hexagons_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 992px;
+    align-self: center;
 }

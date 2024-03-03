@@ -1,24 +1,23 @@
 import React from 'react';
-import act4 from "../static/images/actualcard4.png"
-import image from "@/static/images/Preview.png";
-import styles from "@/app/page.module.css";
-const Page = () => {
+import styles from "./page.module.css";
+import HeaderAndFooterLayout from '../HeaderAndFooterLayout/HeaderAndFooterLayout';
+
+
+export default function Page() {
     return (
-        <div>
-            <div>
-                <img src={image.src} alt={"Image not found"}/>
-            </div>
-            <h1 className={styles.title}>Экскурсии</h1>
-            <div>
-                <h3>Виртуальная экскурсия</h3>
-                <div className={styles.cards_container}>
+        <HeaderAndFooterLayout>
+            <main>
+                <div className={styles.preview_container}></div>
+                <h1 className={styles.title}>Экскурсии</h1>
+                <div>
+                    <h3>Виртуальная экскурсия</h3>
+                    <div className={styles.cards_container}>
 
 
+                    </div>
+                    {/*<TrendingSlider/>*/}
                 </div>
-                {/*<TrendingSlider/>*/}
-            </div>
-        </div>
+            </main>
+        </HeaderAndFooterLayout>
     );
 };
-
-export default Page;

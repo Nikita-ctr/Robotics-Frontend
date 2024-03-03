@@ -1,0 +1,29 @@
+.header_container {
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 16px 80px
+}
+
+.header_navigation :not(:last-child) {
+    margin-right: 20px;
+}
+
+.header_navigation :last-child {
+    color: #68B437;
+}
+
+.navigation_link {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.navigation_link:hover {
+    text-decoration: underline;
+}

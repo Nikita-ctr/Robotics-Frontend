@@ -1,0 +1,9 @@
+.divider_container {
+    display: flex;
+    height: 16px;
+    width: 100%;
+}
+
+.divider_decorator {
+    flex: 1;
+}
