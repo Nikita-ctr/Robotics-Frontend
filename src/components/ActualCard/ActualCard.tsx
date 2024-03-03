@@ -1,6 +1,6 @@
+import PrimaryButton from "../UI/Buttons/PrimaryButton/PrimaryButton";
 import styles from "./ActualCard.module.css";
 import Image from "next/image";
-import PrimaryButton from "../UI/Buttons/PrimaryButton/PrimaryButton";
 
 interface ActualCardProps {
     image: string,
