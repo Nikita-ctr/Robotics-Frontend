@@ -13,6 +13,10 @@ const roboto = Roboto({
 export const metadata: Metadata = {
     title: 'Brest Robotics Laboratory',
     description: 'Make programming',
+    authors: [
+        { name: 'Egor Moroz', url: 'https://github.com/yorrdt' },
+        { name: 'Nikita Khmileuski', url: 'https://github.com/Nikita-ctr' },
+    ],
 }
 
 export default function RootLayout({
@@ -20,6 +24,17 @@ export default function RootLayout({
 }: {
     children: React.ReactNode
 }) {
+
+    /* if (pathname == '/login') {
+        return (
+            <html lang="en">
+                <body className={roboto.className}>
+                    {children}
+                </body>
+            </html>
+        );
+    } */
+
     return (
         <html lang="en">
             <body className={roboto.className}>

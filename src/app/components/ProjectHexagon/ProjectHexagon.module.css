@@ -11,6 +11,10 @@
     height: 224px;
 }
 
+.hexagon_image img {
+    filter: brightness(40%);
+}
+
 .hexagon_text {
     position: absolute;
     top: 50%;

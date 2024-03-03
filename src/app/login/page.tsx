@@ -1,7 +1,8 @@
 'use client'
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styles from './page.module.css';
-import {useRouter} from 'next/navigation'
+import { useRouter } from 'next/navigation'
+import PrimaryButton from '../components/UI/Buttons/PrimaryButton/PrimaryButton';
 
 interface LoginFormInput {
     email: string;
@@ -26,7 +27,7 @@ export default function Login() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({email, password}),
+                body: JSON.stringify({ email, password }),
             });
 
 
@@ -49,7 +50,7 @@ export default function Login() {
     return (
         <main className={styles.page}>
             <div className={styles.form_container}>
-                <h1>Войти</h1>
+                <div className={styles.form_title}>Войти</div>
                 <form className={styles.form} onSubmit={handleFormSubmit}>
                     <div className={styles.input_container}>
                         <label className={styles.label}>Адрес электронной почты</label>
@@ -68,14 +69,12 @@ export default function Login() {
                             type="password"
                             placeholder="Password"
                             value={password}
-                                onChange={(event) => setPassword(event.target.value)}
+                            onChange={(event) => setPassword(event.target.value)}
                         />
                         {error &&
                             <p className={styles.error}>The username and/or password you specified are not correct.</p>}
                     </div>
-                    <button className={styles.button} type="submit">
-                        {loading ? "Загрузка" : "Вход"}
-                    </button>
+                    <PrimaryButton type='submit'>{loading ? "Загрузка" : "Вход"}</PrimaryButton>
                 </form>
             </div>
         </main>

@@ -1,6 +1,6 @@
 import styles from "./ActualCard.module.css";
-import SecondaryButton from "@/app/components/UI/Buttons/SecondaryButton/SecondaryButton";
 import Image from "next/image";
+import PrimaryButton from "../UI/Buttons/PrimaryButton/PrimaryButton";
 
 interface ActualCardProps {
     image: string,
@@ -15,7 +15,7 @@ const ActualCard = ({ image, title, buttonText }: ActualCardProps) => {
                 <Image src={image} alt={"card image"} fill style={{ objectFit: "cover" }} />
             </div>
             <div className={styles.card_title}>{title}</div>
-            <SecondaryButton>{buttonText}</SecondaryButton>
+            <PrimaryButton>{buttonText}</PrimaryButton>
         </div>
     );
 };
