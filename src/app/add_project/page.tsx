@@ -1,9 +1,8 @@
 import styles from "./page.module.css";
 import addImage from "../../static/images/addprojectimage.png";
 import Image from "next/image";
-import Input from "@/app/components/UI/Inputs/Input/Input";
-import InputSelect from "@/app/components/UI/Inputs/InputSelect/InputSelect";
-import SecondaryButton from "@/app/components/UI/Buttons/SecondaryButton/SecondaryButton";
+import Input from "@/components/UI/Inputs/Input/Input";
+import InputSelect from "@/components/UI/Inputs/InputSelect/InputSelect";
 
 export default function AddProject() {
     const directionOptions = [

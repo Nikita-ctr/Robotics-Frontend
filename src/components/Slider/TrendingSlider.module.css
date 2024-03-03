@@ -1,0 +1,19 @@
+.slider_container {}
+
+.slider_item {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.hexagon_overlay {
+    margin-right: 48px;
+}
+
+.slider_item__description {
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 400;
+}

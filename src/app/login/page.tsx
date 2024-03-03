@@ -1,7 +1,8 @@
 'use client'
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styles from './page.module.css';
-import {useRouter} from 'next/navigation'
+import { useRouter } from 'next/navigation'
+import PrimaryButton from '@/components/UI/Buttons/PrimaryButton/PrimaryButton';
 
 interface LoginFormInput {
     email: string;
@@ -26,7 +27,7 @@ export default function Login() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({email, password}),
+                body: JSON.stringify({ email, password }),
             });
 
 
@@ -47,35 +48,35 @@ export default function Login() {
     };
 
     return (
-        <main className={styles.page}>
+        <main className={styles.login_section}>
             <div className={styles.form_container}>
-                <h1>Войти</h1>
+                <div className={styles.form_title}>Войти</div>
                 <form className={styles.form} onSubmit={handleFormSubmit}>
-                    <div className={styles.input_container}>
-                        <label className={styles.label}>Адрес электронной почты</label>
-                        <input
-                            className={styles.input}
-                            type="email"
-                            placeholder="Email"
-                            value={email}
-                            onChange={(event) => setEmail(event.target.value)}
-                        />
-                    </div>
-                    <div className={styles.input_container}>
-                        <label className={styles.label}>Пароль</label>
-                        <input
-                            className={styles.input}
-                            type="password"
-                            placeholder="Password"
-                            value={password}
+                    <div className={styles.form_inputs_container}>
+                        <div className={styles.input_container}>
+                            <div className={styles.label}>Адрес электронной почты</div>
+                            <input
+                                className={styles.input}
+                                type="email"
+                                placeholder="Email"
+                                value={email}
+                                onChange={(event) => setEmail(event.target.value)}
+                            />
+                        </div>
+                        <div className={styles.input_container}>
+                            <div className={styles.label}>Пароль</div>
+                            <input
+                                className={styles.input}
+                                type="password"
+                                placeholder="Password"
+                                value={password}
                                 onChange={(event) => setPassword(event.target.value)}
-                        />
-                        {error &&
-                            <p className={styles.error}>The username and/or password you specified are not correct.</p>}
+                            />
+                            {error &&
+                                <p className={styles.error_message}>The username and/or password you specified are not correct.</p>}
+                        </div>
                     </div>
-                    <button className={styles.button} type="submit">
-                        {loading ? "Загрузка" : "Вход"}
-                    </button>
+                    <PrimaryButton type='submit'>{loading ? "Загрузка" : "Вход"}</PrimaryButton>
                 </form>
             </div>
         </main>

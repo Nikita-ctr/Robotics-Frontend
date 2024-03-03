@@ -1,0 +1,29 @@
+.hexagon_container {
+    flex: 0 0 25%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hexagon_image {
+    position: relative;
+    width: 198px;
+    height: 224px;
+}
+
+.hexagon_image img {
+    filter: brightness(40%);
+}
+
+.hexagon_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;;
+
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: 1.125rem;
+}
