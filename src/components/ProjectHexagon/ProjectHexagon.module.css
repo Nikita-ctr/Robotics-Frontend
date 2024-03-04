@@ -13,6 +13,7 @@
 
 .hexagon_image img {
     filter: brightness(40%);
+    user-select: none;
 }
 
 .hexagon_text {
@@ -20,7 +21,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;;
+    width: 100%;
+    ;
 
     padding: 8px;
     text-align: center;

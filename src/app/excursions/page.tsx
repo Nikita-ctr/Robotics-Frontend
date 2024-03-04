@@ -1,6 +1,6 @@
-import React from 'react';
 import styles from "./page.module.css";
 import HeaderAndFooterLayout from '../HeaderAndFooterLayout/HeaderAndFooterLayout';
+import ExcursionScans from "@/components/ExcursionScans/ExcursionScans";
 
 
 export default function Page() {
@@ -9,6 +9,8 @@ export default function Page() {
             <main>
                 <div className={styles.preview_container}></div>
                 <h1 className={styles.title}>Экскурсии</h1>
+                <ExcursionScans />
+
                 <div>
                     <h3>Виртуальная экскурсия</h3>
                     <div className={styles.cards_container}>

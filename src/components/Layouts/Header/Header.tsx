@@ -29,6 +29,6 @@ export default function Header() {
                     Войти
                 </Link>
             </div>
-        </header>
+        </ header>
     );
 }
