@@ -1,8 +1,10 @@
 'use client'
+
 import React, { useState } from 'react';
 import styles from './page.module.css';
 import { useRouter } from 'next/navigation'
 import PrimaryButton from '@/components/UI/Buttons/PrimaryButton/PrimaryButton';
+import Link from 'next/link';
 
 interface LoginFormInput {
     email: string;
@@ -49,6 +51,12 @@ export default function Login() {
 
     return (
         <main className={styles.login_section}>
+            <div className={styles.link_back_container}>
+                <Link className={styles.back_link} href="/">
+                    <span className={`material-icons ${styles.arrow_icon_container}`}>arrow_back</span>
+                    <div className={styles.link_back__title}>На главную</div>
+                </Link>
+            </div>
             <div className={styles.form_container}>
                 <div className={styles.form_title}>Войти</div>
                 <form className={styles.form} onSubmit={handleFormSubmit}>
