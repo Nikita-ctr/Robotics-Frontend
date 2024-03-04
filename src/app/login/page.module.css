@@ -23,7 +23,7 @@
 .back_link {
     display: flex;
     flex-direction: row;
-    padding: 8px 12px;
+    padding: 6px 8px;
     align-items: center;
 }
 
@@ -36,6 +36,7 @@
 }
 
 .link_back__title {
+    font-size: 0.875rem;
     font-weight: 500;
 }
 
