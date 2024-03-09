@@ -5,6 +5,8 @@ import ProjectHexagon from "../components/ProjectHexagon/ProjectHexagon";
 import HeaderAndFooterLayout from "./HeaderAndFooterLayout/HeaderAndFooterLayout";
 import TrendingSlider from "@/components/Slider/TrendingSlider";
 
+import Image from "next/image";
+
 
 export default function Home() {
 
@@ -67,7 +69,14 @@ export default function Home() {
                 </div>
 
                 <div className={styles.clients_section}>
-                    
+                    <div className={styles.section__title}>Наши партнеры</div>
+                    <div className={styles.general_partner_container}>
+                        <div className={styles.general_partner__title}>Генеральный партнер</div>
+                        <div className={styles.general_partner__image_container}>
+                            <Image src="/icons/home/clients/sia_logo.svg" alt="sia.by" fill />
+                        </div>
+                    </div>
+                    {/* Partners slider */}
                 </div>
             </main>
         </HeaderAndFooterLayout>

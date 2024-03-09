@@ -22,8 +22,8 @@ export default function Footer() {
                         <div className={styles.info_text}>Тел: +375 29 527 45 39</div>
                         <div className={styles.info_text}>E-mail: vvkasyanik@bstu.by</div>
                         <div className={styles.social_networks_container}>
-                            <Image src={"/icons/instagram.svg"} alt="" height={48} width={48} />
-                            <Image src={"/icons/telegram.svg"} alt="" height={48} width={48} />
+                            <Image src={"/icons/home/footer/instagram.svg"} alt="" height={48} width={48} />
+                            <Image src={"/icons/home/footer/telegram.svg"} alt="" height={48} width={48} />
                         </div>
                     </div>
                 </div>

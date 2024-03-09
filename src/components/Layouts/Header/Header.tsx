@@ -10,8 +10,8 @@ export default function Header() {
 
     return (
         <header className={styles.header_container}>
-            <div>
-                <Image src="/icons/ir_icon.png" alt="Logo" height={40} width={60} />
+            <div className={styles.logo_container}>
+                <Image src="/icons/home/header/ir_logo.svg" alt="Logo" fill />
             </div>
 
             <div className={styles.header_navigation}>
