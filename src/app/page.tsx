@@ -34,8 +34,11 @@ export default function Home() {
                     <div className={styles.preview_section__title}>Industrial Robotics</div>
                     <div className={styles.preview_section__description}>{preview_description}</div>
                 </div>
+
                 <DividerDecorator />
+
                 <TrendingSlider />
+
                 <div className={styles.cards_section}>
                     <div className={styles.section__title}>Актуальное</div>
                     <div className={styles.cards_container}>
@@ -49,6 +52,7 @@ export default function Home() {
                         }
                     </div>
                 </div>
+
                 <div className={styles.projects_section}>
                     <div className={styles.section__title}>Проекты</div>
                     <div className={styles.project_hexagons_container}>
@@ -60,6 +64,10 @@ export default function Home() {
                             })
                         }
                     </div>
+                </div>
+
+                <div className={styles.clients_section}>
+                    
                 </div>
             </main>
         </HeaderAndFooterLayout>

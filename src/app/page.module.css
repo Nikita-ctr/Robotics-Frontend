@@ -64,3 +64,9 @@
     max-width: 992px;
     align-self: center;
 }
+
+/* ----------------------- */
+
+.clients_section {
+    padding: 56px 80px;
+}

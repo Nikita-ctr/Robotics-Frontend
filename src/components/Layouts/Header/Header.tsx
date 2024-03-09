@@ -20,7 +20,6 @@ export default function Header() {
                 <Link className={styles.navigation_link} href="/">Новости</Link>
                 <Link className={styles.navigation_link} href="/">Проекты</Link>
                 <Link className={styles.navigation_link} href="/excursions">Экскурсия</Link>
-                <Link className={styles.navigation_link} href="https://sia.by/" target="_blank">sia.by</Link>
             </div>
 
             <div>

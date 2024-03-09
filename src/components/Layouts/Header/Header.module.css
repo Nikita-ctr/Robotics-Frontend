@@ -15,10 +15,6 @@
     margin-right: 16px;
 }
 
-.header_navigation :last-child {
-    color: #68B437;
-}
-
 .navigation_link {
     padding: 8px 10px;
     border-radius: 8px;
