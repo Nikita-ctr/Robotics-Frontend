@@ -77,18 +77,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 32px;
+}
 
+.general_partner__title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-right: 16px;
+}
 
-    & .general_partner__title {
-        font-size: 1.125rem;
-        font-weight: 500;
-        margin-right: 16px;
-    }
-
-    & .general_partner__image_container {
-        position: relative;
-        height: 80px;
-        width: 156px;
-    }
-
+.general_partner__image_container {
+    position: relative;
+    height: 80px;
+    width: 156px;
 }

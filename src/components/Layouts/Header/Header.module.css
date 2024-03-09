@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    padding: 8px 80px;
+    padding: 16px 80px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -17,8 +17,8 @@
 
 .logo_container {
     position: relative;
-    height: 56px;
-    width: 54px;
+    height: 40px;
+    width: 56px;
 }
 
 .navigation_link {

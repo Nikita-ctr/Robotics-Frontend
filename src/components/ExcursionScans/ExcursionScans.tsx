@@ -16,8 +16,6 @@ const ReactPhotoSphereViewer = dynamic(
 
 const ExcursionScans = () => {
 
-
-
     const images = [
         { src: '/excursion_scans/scan1.jpg', },
         { src: '/excursion_scans/scan2.jpg', },
@@ -56,7 +54,7 @@ const ExcursionScans = () => {
         },
         'zoom',
         'fullscreen',
-    ]
+    ];
 
     return (
         <div className={styles.excursion_scans_section}>

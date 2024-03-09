@@ -1,11 +1,14 @@
 import styles from "./page.module.css"
+
 import ActualCard from "@/components/ActualCard/ActualCard";
 import DividerDecorator from "../components/DividerDecorator/DividerDecorator";
 import ProjectHexagon from "../components/ProjectHexagon/ProjectHexagon";
 import HeaderAndFooterLayout from "./HeaderAndFooterLayout/HeaderAndFooterLayout";
 import TrendingSlider from "@/components/Slider/TrendingSlider";
+import PartnersSlider from "@/components/PartnersSlider/PartnersSlider";
 
 import Image from "next/image";
+
 
 
 export default function Home() {
@@ -76,7 +79,7 @@ export default function Home() {
                             <Image src="/icons/home/clients/sia_logo.svg" alt="sia.by" fill />
                         </div>
                     </div>
-                    {/* Partners slider */}
+                    <PartnersSlider />
                 </div>
             </main>
         </HeaderAndFooterLayout>
