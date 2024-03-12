@@ -3,7 +3,7 @@
     min-height: 260px;
     height: 44vh;
 
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("/images/excursions_preview.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/excursions/preview.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

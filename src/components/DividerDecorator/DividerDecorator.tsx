@@ -15,7 +15,6 @@ export default function DividerDecorator() {
         <div className={styles.divider_container}>
             {
                 colorsList.map((element, index) => {
-
                     return (
                         <div key={index} className={styles.divider_decorator} style={{ backgroundColor: element }}></div>
                     );

@@ -1,0 +1,111 @@
+.preview_container {
+    width: 100%;
+    min-height: 260px;
+    height: 44vh;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/about_laboratory/preview.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px 48px;
+}
+
+.preview_container__title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.lab_goals_background {
+    background-image:
+        linear-gradient(90deg,
+            rgba(13, 109, 181, 0.9) 0%,
+            rgba(13, 109, 181, 0.9) 50%,
+            rgba(13, 109, 181, 0) 70%,
+            rgba(13, 109, 181, 0)),
+        url("/images/about_laboratory/section_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.competencies_background {
+    background-image:
+        linear-gradient(90deg,
+            rgba(107, 183, 206, 0) 0%,
+            rgba(107, 183, 206, 0) 30%,
+            rgba(107, 183, 206, 0.9) 50%,
+            rgba(107, 183, 206, 0.9)),
+        url("/images/about_laboratory/section_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.directions_background {
+    background-image:
+        linear-gradient(90deg,
+            rgba(90, 171, 111, 0.9) 0%,
+            rgba(90, 171, 111, 0.9) 50%,
+            rgba(90, 171, 111, 0) 70%,
+            rgba(90, 171, 111, 0)),
+        url("/images/about_laboratory/section_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.used_technologies_background {
+    background-image:
+        linear-gradient(90deg,
+            rgba(138, 158, 209, 0) 0%,
+            rgba(138, 158, 209, 0) 30%,
+            rgba(138, 158, 209, 0.9) 50%,
+            rgba(138, 158, 209, 0.9)),
+        url("/images/about_laboratory/section_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.description_section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 96px 80px;
+}
+
+.description_container {
+    max-width: 50%;
+}
+
+.justify_flex_end {
+    justify-content: flex-end;
+}
+
+.description_container__title {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.description_container__list {
+    padding-left: 16px;
+}
+
+.description_container__list> :not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.description_container__list>li {
+    font-size: 1.125rem;
+    color: white;
+    hyphens: manual;
+}

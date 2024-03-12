@@ -16,7 +16,7 @@ export default function Header() {
 
             <div className={styles.header_navigation}>
                 <Link className={styles.navigation_link} href="/">Главная</Link>
-                <Link className={styles.navigation_link} href="/">О лаборатории</Link>
+                <Link className={styles.navigation_link} href="/about_laboratory">О лаборатории</Link>
                 <Link className={styles.navigation_link} href="/">Новости</Link>
                 <Link className={styles.navigation_link} href="/">Проекты</Link>
                 <Link className={styles.navigation_link} href="/excursions">Экскурсия</Link>

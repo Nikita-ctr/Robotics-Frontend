@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+:root {
+    --brand-color-dark-blue: #0D6DB5;
+    --brand-color-blue: #6BB7CE;
+    --brand-color-green: #5AAB6F;
+    --brand-color-gray-purple: #8A9ED1;
+    --brand-color-light-gray-blue: #93CBC2;
+    --brand-color-blue-gray: #5598C6;
+}
+
 *,
 body {
     box-sizing: border-box;
