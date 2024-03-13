@@ -5,13 +5,13 @@
     justify-content: center;
 }
 
-.hexagon_image {
+.hexagon_image_container {
     position: relative;
     width: 198px;
     height: 224px;
 }
 
-.hexagon_image img {
+.hexagon_image {
     filter: brightness(40%);
     user-select: none;
 }

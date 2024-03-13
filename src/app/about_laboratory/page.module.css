@@ -25,7 +25,7 @@
         linear-gradient(90deg,
             rgba(13, 109, 181, 0.9) 0%,
             rgba(13, 109, 181, 0.9) 50%,
-            rgba(13, 109, 181, 0) 70%,
+            rgba(13, 109, 181, 0) 80%,
             rgba(13, 109, 181, 0)),
         url("/images/about_laboratory/section_background.jpg");
     background-position: center;
@@ -37,7 +37,7 @@
     background-image:
         linear-gradient(90deg,
             rgba(107, 183, 206, 0) 0%,
-            rgba(107, 183, 206, 0) 30%,
+            rgba(107, 183, 206, 0) 20%,
             rgba(107, 183, 206, 0.9) 50%,
             rgba(107, 183, 206, 0.9)),
         url("/images/about_laboratory/section_background.jpg");
@@ -51,7 +51,7 @@
         linear-gradient(90deg,
             rgba(90, 171, 111, 0.9) 0%,
             rgba(90, 171, 111, 0.9) 50%,
-            rgba(90, 171, 111, 0) 70%,
+            rgba(90, 171, 111, 0) 80%,
             rgba(90, 171, 111, 0)),
         url("/images/about_laboratory/section_background.jpg");
     background-position: center;
@@ -63,7 +63,7 @@
     background-image:
         linear-gradient(90deg,
             rgba(138, 158, 209, 0) 0%,
-            rgba(138, 158, 209, 0) 30%,
+            rgba(138, 158, 209, 0) 20%,
             rgba(138, 158, 209, 0.9) 50%,
             rgba(138, 158, 209, 0.9)),
         url("/images/about_laboratory/section_background.jpg");
