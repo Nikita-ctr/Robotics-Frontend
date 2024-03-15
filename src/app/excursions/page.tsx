@@ -4,6 +4,7 @@ import Image from "next/image";
 import HeaderAndFooterLayout from '../HeaderAndFooterLayout/HeaderAndFooterLayout';
 import ExcursionScans from "@/components/ExcursionScans/ExcursionScans";
 import PrimaryButton from "@/components/UI/Buttons/PrimaryButton/PrimaryButton";
+import DividerDecorator from "@/components/DividerDecorator/DividerDecorator";
 
 
 export default function Page() {
@@ -13,6 +14,8 @@ export default function Page() {
                 <div className={styles.preview_container}>
                     <div className={styles.preview_container__title}>Экскурсия</div>
                 </div>
+
+                <DividerDecorator />
 
                 <div className={styles.virtual_excursion_container}>
                     <div className={styles.virtual_excursion__title}>Виртуальная экскурсия</div>
